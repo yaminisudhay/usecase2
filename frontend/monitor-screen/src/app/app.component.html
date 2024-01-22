@@ -1,0 +1,26 @@
+<div class="page-container">
+  <div class="form-container">
+    <form #monitorForm="ngForm" (ngSubmit)="addDetail()">
+      <h2>Monitor Websites</h2>
+      <input #txt="ngModel" class="text-box" placeholder="Enter Website here to be monitored" required
+       type="text" name="txt" [(ngModel)]="webTxt"/>
+      <p *ngIf="txt.errors && txt.touched && txt.dirty" class="error-msg">
+        Website name is empty
+      </p>
+      <button type="submit" class="btn" [disabled]="monitorForm.invalid">ADD</button>
+    </form>
+  </div>
+  <div>
+    <table class="table-container">
+      <tr>
+        <th class="tab-ele-header">Website Name</th>
+        <th class="tab-ele-header">Website Status</th>
+      </tr>
+      <tr *ngFor="let l of newList">
+        <td class="tab-ele">{{l.websiteName}}</td>
+        <td class="tab-ele"><button [ngClass]="{'btn-success':l.status === 'Success','btn-failure':l.status === 'Failure'}">{{l.status}}</button></td>
+      </tr>
+    </table>
+  </div>  
+</div>
+

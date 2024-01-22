@@ -1,0 +1,63 @@
+.page-container{
+    margin: auto;
+    /*background-color:#722222;*/
+    width:80%;
+    text-align:center;
+    padding:7px;
+    height: 100%;
+}
+.form-container{
+    margin:auto;
+    /*background-color:#7ccc82;*/
+    width:30%;
+    text-align:center;
+    padding:2px;
+}
+.table-container{
+    margin:auto;
+    margin-top: 50px;
+    /*background-color:#7ccc82;*/
+    width:70%;
+    text-align:center;
+    height:100%;
+    border: 0.5px black solid;
+}
+.text-box{
+    width:100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height:40px;
+    background-color: rgb(255, 255, 255);
+    border:0.5px rgb(32, 32, 32) solid;
+}
+.tab-ele-header{
+    height: 50px;
+    border:0.5px black solid;
+    background-color: yellow;
+}
+.tab-ele{
+    height: 50px;
+    border:0.5px black solid;
+}
+.btn{
+    width:50%;
+    margin-top: 20px;
+    min-height:40px;
+    border-radius: 10px;
+    border:0.5px black solid;
+}
+.btn-success{
+    width:100px;
+    height:30px;
+    border-radius: 5px;
+    background-color: lightgreen;
+}
+.btn-failure{
+    width:100px;
+    height:30px;
+    border-radius: 5px;
+    background-color: rgb(255, 181, 181);
+}
+.error-msg{
+    color: red;
+}
